@@ -18,9 +18,9 @@ vm_disk_storage   = "local-lvm"
 vm_disk_size      = "32G"
 vm_network_bridge = "vmbr1"
 
-vm_vcpus      = 2
-vm_vcpu_cores = 2
-vm_memory     = 4096
+vm_vcpus      = 1
+vm_vcpu_cores = 1
+vm_memory     = 2048
 
 vm_cloudinit_network = {
   ip      = "172.16.22.10"
