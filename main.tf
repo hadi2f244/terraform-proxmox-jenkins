@@ -20,6 +20,7 @@ resource "proxmox_vm_qemu" "pxe-example" {
   boot  = "order=scsi0;net0"
   cores = var.vm_vcpu_cores
   vcpus = var.vm_vcpus
+  vm_state = "running"
   cpu   = "host"
   memory      = var.vm_memory
   qemu_os     = "other"
