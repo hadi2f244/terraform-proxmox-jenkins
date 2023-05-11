@@ -11,19 +11,19 @@ pm_api_token_secret = "1a13cf59-efe6-46ee-ae18-31611212cb0a"
 # Proxmox virtual machine #
 #=========================#
 
-vm_name           = "pxeexample"
+vm_name           = "autogpt"
 clone_name        = "ubuntu-cloud"
 vm_target_node    = "pve"
 vm_disk_storage   = "local-lvm"
 vm_disk_size      = "32G"
 vm_network_bridge = "vmbr1"
 
-vm_vcpus      = 1
-vm_vcpu_cores = 1
-vm_memory     = 2048
+vm_vcpus      = 2
+vm_vcpu_cores = 2
+vm_memory     = 8192
 
 vm_cloudinit_network = {
-  ip      = "172.16.22.10"
+  ip      = "172.16.23.10"
   netmask = "16"
   gateway = "172.16.1.1"
 }
